@@ -1,0 +1,218 @@
+@media (max-width:$lg) {
+    section#header{
+        .container{
+            width: $md -20px;
+            nav{
+                .navbar{
+                    display: none;
+                }
+                .search{
+                    display: none;
+                }
+                button{
+                    display: none;
+                }
+                .check{
+                    display: none;
+                }
+                aside.sider{
+                    display: block;
+                }
+                .problem{
+                    display: none;
+                }
+                .mdsearch{
+                    display: block;
+                }
+                aside{
+                    .sider-links{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        font-size: 1.3rem;
+                        gap: 20px;
+                        position: relative;
+                        z-index: 999;
+                        a:hover{
+                                color: $orange3; 
+                        }
+                        .close{
+                            font-size: 2rem;
+                            position: relative;
+                            left: 220px;
+                        }
+                        .links{
+                            position: relative;
+                            right: 105px;
+                            :hover{
+                                color: $orange3;
+                            }
+                        }
+                        a{
+                            color: $white;
+                            justify-content: flex-start;
+                            
+                        }
+                        .search2{
+                            position: relative;
+                            right: 14px;
+                            .glass{
+                                position: relative;
+                                left: 30px;
+                                color: gray;
+                            }
+                        }
+                        .button{
+                            display: block;
+                            width: 17.5rem;
+                            background-color: $orange2;
+                        }
+                    }
+                } 
+            } 
+          .bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .left{
+                position: relative;
+                left: 20px;
+                max-width: 450px;
+                text-align: center;
+                font-size: 0.8em;
+                line-height: 0.8em;
+                .h12{
+                    line-height: 0.9em;
+                }
+                p{
+                    text-align: start;
+                }
+            }
+          }  
+          .r1, .r2, .r3, .r4, .r5, .r6, .r7{
+            display: none;
+          }
+        } 
+    } 
+    .top{
+       max-width: 600px;
+        .text{
+            h3{
+                font-size: 24px;
+            }
+            min-width: 367px;
+        }
+    }
+   section#news{
+        .container{
+            width: $md -20px;
+            .cards{
+                width: 600px;
+                grid-template-columns: repeat( 2, 50%);
+            } 
+        }
+    } 
+    section#onemore{
+        .o1 ,.o2{
+            display: none;
+        }
+        .container{
+            width: $md -20px;
+            .onemore{
+                color:$white;
+            width:$md - 20px ;
+            }
+            .b2{
+                right: 800px;
+            }
+        }
+    } 
+    section#products{
+        .container{
+            width: $md -20px;
+            .cards2{
+                width: 600px;
+                grid-template-columns: repeat(2, 50%);
+            }
+        }
+    }  
+    section#knowledge{
+        .container{
+            .cards3{
+                .none{
+                  display: none;
+
+                }
+            }
+        }
+    }
+  section#footer{
+    .container{
+        width: $md -20px;
+        .form{
+            width: $md -20px;
+        }
+  }         
+}               
+
+
+
+
+
+@media (max-width:$md) {
+    section#news{
+        .container{
+            .card{
+                width: 400px;
+                .cards{
+                    max-width: 168px;
+                }
+            }
+            .top{
+                max-width: 600px;
+                button{
+                   display: none;
+                }
+                .text{
+                     h3{
+                         font-size: 18px;
+                     }
+                     min-width: 300px;
+                }
+            }
+            
+        }
+    } 
+    .container{
+        width: $sd -20px;
+        .form{
+            width: $sd -20px;
+        }
+    }         
+}
+@media (max-width:$sm) {
+    .cards{
+        .card{
+            box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 10px;
+            background-color:#FDFDFD ;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+            p{
+                color: gray;
+                font-size: 0.7rem;
+            }
+            h3{
+                font-size: 16px;
+                font-weight: 700;
+            }
+            img{
+                border-radius:5px;
+            }
+        }
+    }
+}
